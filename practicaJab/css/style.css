@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pagar .btn-pagar{
+    border: none;
+    background-color: darkblue;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    margin: 0 0 10px 0;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 5px;
+}
+.nav h1{
+    margin: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: lightslategrey;
+}
+.nav img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.container .products{
+    /* margin: 0 auto; */
+    width: 65%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);    
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.8rem;
+    margin-bottom: 20px;
+}
+.container .products img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.products .producto{
+    cursor: pointer;
+}
+/* img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+} */
+.money, .total{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.money .budget{
+    font-size: 1.2rem;
+}
+.money .info{
+    font-size: 1rem;
+}
+.list-shipping{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.list .line{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.shipping{
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);    
+    grid-template-rows: repeat(2, 60px);
+    gap: 1rem;
+}
+.shipping .producto img{
+    border-radius: 50%;
+    width: 65px;
+    cursor: pointer;
+}
+.list .line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    
+}
+.line .column1{
+    width: 235px;
+    text-align: left;
+}
+.line .column2{
+    flex: 1;
+    text-align: right;
+}
+.note{
+    border: 1px solid gray;
+    width: 350px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0 15px;
+}
+.note .list .total{
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* .note .total{
+    width: 100%;
+    text-align: center;
+} */
+
+
+/* .shipping .producto .column1, .shipping .producto .column2{
+    font-size: 0.8rem;
+} */
